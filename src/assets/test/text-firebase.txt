@@ -1,0 +1,95 @@
+<template class="dark">
+    <div class="bg-red-500 dark:bg-black">jaar1</div>
+    <div id="app">
+        <input ref="newmessage" placeholder="new message ..." type="text">
+        <button @click="addNewMessage">addnew</button>
+    </div>
+</template>
+
+<script lang="ts">
+import { getFirestore, onSnapshot, collection, doc, deleteDoc, setDoc, addDoc, orderBy, query } from 'firebase/firestore';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { ref, onUnmounted } from 'vue';
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCPl9h4DqF4Yhd1_0mL6VyuUQ3r7L1uZzI",
+    authDomain: "test-311af.firebaseapp.com",
+    projectId: "test-311af",
+    storageBucket: "test-311af.appspot.com",
+    messagingSenderId: "647783387657",
+    appId: "1:647783387657:web:9ad27de35ee9402c671ed8"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const db = getFirestore(app);
+export default {
+    name: 'App',
+    components: {},
+    methods: {
+        addNewMessage: function () {
+            addDoc(collection(db, 'messages'), {
+                text: this.$refs.newmessage.value,
+                date: Date.now()
+            });
+        },
+        updateMessage: function (message) {
+            setDoc(doc(db, 'messages', message.id), {
+                text: message.text,
+                date: message.date
+            })
+        },
+        deleteMessage: function (id) {
+            deleteDoc(doc(db, 'messages', id))
+        }
+    },
+    data: () => {
+        return {
+            messages: ref([])
+        }
+    },
+    mounted() {
+        const latestQuery = query(collection(db, "messages"), orderBy('date'));
+        const livemessages = onSnapshot(latestQuery, (snapshot) => {
+            this.messages = snapshot.docs.map((doc) => {
+                return {
+                    id: doc.id,
+                    text: doc.data().text,
+                    date: doc.data().date
+                }
+            });
+        });
+        onUnmounted(livemessages)
+    }
+}
+</script>
+
+<style scoped>
+header {
+    line-height: 1.5;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+        place-items: center;
+        padding-right: calc(var(--section-gap) / 2);
+    }
+
+    .logo {
+        margin: 0 2rem 0 0;
+    }
+
+    header .wrapper {
+        display: flex;
+        place-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+</style>
