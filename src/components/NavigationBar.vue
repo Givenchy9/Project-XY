@@ -9,7 +9,8 @@
         </div>
         <div class="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
           <div class="w-full sm:max-w-xs">
-            <h1 class="text-center font-bold text-2xl"><router-link to="/">Givenchy{{ title }}</router-link></h1>
+            <h1 class="text-center font-bold text-2xl"><router-link to="/" class="hover:text-white">Givenchy{{ title
+            }}</router-link></h1>
           </div>
         </div>
         <div class="relative z-10 flex items-center lg:hidden">
@@ -102,7 +103,7 @@ const user = {
   email: 'Givenchy@gmail.com',
 }
 const navigation = [
-  { name: 'Jaar1', href: '/jaar1', current: false },
+  { name: 'Jaar 1', href: '/jaar1', current: false },
   { name: 'Jaar 2', href: '#', current: false },
   { name: 'Jaar 3', href: '#', current: false },
   { name: 'Extra', href: '#', current: false },
