@@ -49,16 +49,6 @@
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Circle</a>
                                         </p>
                                         <p class="py-2 ">
-                                            <a target="blanc" href="website/Year1/Semester2/Basis/Deelbaar.txt"
-                                                class="hover:text-orange-400"><i
-                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>Deelbaar</a>
-                                        </p>
-                                        <p class="py-2 ">
-                                            <a target="blanc" href="website/Year1/Semester2/Basis/Geheimschrijver.txt"
-                                                class="hover:text-orange-400"><i
-                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>GeheimSchrijver</a>
-                                        </p>
-                                        <p class="py-2 ">
                                             <a target="blanc" href="website/Year1/Semester2/Basis/Hoofdletters.php"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Hoofdletters</a>
@@ -69,9 +59,9 @@
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Leeftijd</a>
                                         </p>
                                         <p class="py-2 ">
-                                            <a target="blanc" href="website/Year1/Semester2/Basis/Leeftijdsgrenzen.html"
+                                            <a target="blanc" href="website/Year1/Semester2/Basis/leeftijdgrenzen.html"
                                                 class="hover:text-orange-400"><i
-                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>Leeftijds Grens</a>
+                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>Input to Output</a>
                                         </p>
                                         <p class="py-2 ">
                                             <a target="blanc" href="website/Year1/Semester2/Basis/Mail-Username.html"
@@ -92,15 +82,9 @@
                                         </p>
                                         <p class="py-2 ">
                                             <a target="blanc"
-                                                href="website/Year1/Semester2/FRONTEND/casino (niet af)/casino.html"
-                                                class="hover:text-orange-400"><i
-                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>Casino</a>
-                                        </p>
-                                        <p class="py-2 ">
-                                            <a target="blanc"
                                                 href="website/Year1/Semester2/FRONTEND/ColorGame/ColorGame.html"
-                                                class="hover:text-orange-400"><i
-                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>Color Game</a>
+                                                class="hover:text-orange-400"><i class="fa-solid fa-code pr-2"></i>Color
+                                                Game</a>
                                         </p>
                                         <p class="py-2 ">
                                             <a target="blanc"
@@ -109,15 +93,11 @@
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Eerste Website</a>
                                         </p>
                                         <p class="py-2 ">
-                                            <a target="blanc" href="website/Year1/Semester2/FRONTEND/Events/Events1.php"
-                                                class="hover:text-orange-400"><i
-                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>Events</a>
-                                        </p>
-                                        <p class="py-2 ">
                                             <a target="blanc"
                                                 href="website/Year1/Semester2/FRONTEND/Stopwatch/Stopwatch.html"
                                                 class="hover:text-orange-400"><i
-                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>Stopwatch</a>
+                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>Stopwatch (zie ook
+                                                casino.html)</a>
                                         </p>
                                         <p class="py-2 ">
                                             <a target="blanc"
@@ -138,13 +118,12 @@
                                     <div class='dropdown-contentA2 hidden min-w-40 px-3 py-2'>
                                         <p class="py-2 ">
                                             <a target="blanc" href="website/Year1/Semester2/FRONTEND/Games/Game1.html"
-                                                class="hover:text-orange-400"><i
-                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>Blok</a>
+                                                class="hover:text-orange-400"><i class="fa-solid fa-code pr-2"></i>Blok</a>
                                         </p>
                                         <p class="py-2 ">
                                             <a target="blanc" href="website/Year1/Semester2/FRONTEND/Games/interval.html"
                                                 class="hover:text-orange-400"><i
-                                                    class="fa-solid fa-code text-orange-500 pr-2"></i>Intervall</a>
+                                                    class="fa-solid fa-code pr-2"></i>Intervall</a>
                                         </p>
                                     </div>
                                 </div>
@@ -171,14 +150,26 @@
                                 <i class="folder-jaar2-b2 pr-2 hidden text-blue-400 fa-regular fa-folder-open"></i>
                                 Stage
                             </p>
-                            <div class='dropdown-contentB hidden min-w-40 px-3 py-2 border-t'>
+                            <div class='dropdown-contentB hidden min-w-40 px-3 py-2 border-t text-left'>
                                 <p class="py-2 ">
                                     <a href="#" class="hover:text-orange-400"><i
-                                            class="fa-solid fa-code text-orange-500 pr-2"></i>Array</a>
+                                            class="fa-solid fa-code text-orange-500 pr-2"></i>Searchbar</a>
                                 </p>
                                 <p class="py-2 ">
                                     <a href="#" class="hover:text-orange-400"><i
-                                            class="fa-solid fa-code text-orange-500 pr-2"></i>Circle</a>
+                                            class="fa-solid fa-code text-orange-500 pr-2"></i>Fuzzy search</a>
+                                </p>
+                                <p class="py-2 ">
+                                    <a href="#" class="hover:text-orange-400"><i
+                                            class="fa-solid fa-code text-orange-500 pr-2"></i>ToggleDivs</a>
+                                </p>
+                                <p class="py-2 ">
+                                    <a href="#" class="hover:text-orange-400"><i
+                                            class="fa-solid fa-code text-orange-500 pr-2"></i>Copy Text</a>
+                                </p>
+                                <p class="py-2 ">
+                                    <a href="#" class="hover:text-orange-400"><i
+                                            class="fa-solid fa-code text-orange-500 pr-2"></i>maximum inputs?</a>
                                 </p>
                             </div>
                         </div>
@@ -272,6 +263,17 @@
                             <p class="dropdown-contentA hidden min-w-40 px-3 py-2 border-t text-left">
                                 <a target="blanc" href="website/Extra/VUE/VUE3.vue" class="hover:text-green-500"><i
                                         class="fa-brands fa-vuejs text-green-500 pr-2"></i>VUE3</a>
+                            </p>
+                        </div>
+                        <div class="dropdownA relative inline-block border-b-2 w-full">
+                            <p class="py-2 font-bold">
+                                <i class="folder-jaar1-a1 pr-2 text-blue-400 fa-solid fa-folder"></i>
+                                <i class="folder-jaar1-a2 pr-2 hidden text-blue-400 fa-regular fa-folder-open"></i>
+                                Database
+                            </p>
+                            <p class="dropdown-contentA hidden min-w-40 px-3 py-2 border-t text-left">
+                                <a target="blanc" href="website/Extra/VUE/VUE3.vue" class="hover:text-orange-500"><i
+                                        class="fa-brands fa-vuejs text-orange-500 pr-2"></i>Firebase</a>
                             </p>
                         </div>
                     </div>

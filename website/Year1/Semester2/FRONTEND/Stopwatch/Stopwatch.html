@@ -1,27 +1,88 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>games</title>
-        <style>
+<html lang="en">
 
-        </style>
-    </head>
-    <body>
-        <h2>The setInterval() Method</h2>
-        <div id="display"></div>
-        <button onclick="fStop()">stop</button>
-        <script>
-            let sec = 0;
-            let mijnInterval = setInterval(secTeller, 1000);
-
-        function fStop() {
-            clearInterval(mijnInterval)
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
         }
 
-        function secTeller() {
-            sec = sec + 1;
-            document.getElementById("display").innerHTML = sec + " sec";
+        #display {
+            font-size: 2em;
+            margin-bottom: 20px;
         }
-        </script>
-    </body>
+
+        #controls {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            font-size: 1em;
+            margin: 0 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="display">00:00:00</div>
+    <div id="controls">
+        <button onclick="startStop()">Start/Stop</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <script>
+        let isRunning = false;
+        let seconds = 0;
+        let minutes = 0;
+        let hours = 0;
+        let interval;
+
+        function startStop() {
+            if (isRunning) {
+                clearInterval(interval);
+            } else {
+                interval = setInterval(updateDisplay, 1000);
+            }
+
+            isRunning = !isRunning;
+        }
+
+        function reset() {
+            clearInterval(interval);
+            isRunning = false;
+            seconds = 0;
+            minutes = 0;
+            hours = 0;
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            seconds++;
+            if (seconds === 60) {
+                seconds = 0;
+                minutes++;
+                if (minutes === 60) {
+                    minutes = 0;
+                    hours++;
+                }
+            }
+
+            const display = document.getElementById('display');
+            display.textContent = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+        }
+
+        function pad(value) {
+            return value.toString().padStart(2, '0');
+        }
+    </script>
+</body>
+
 </html>

@@ -1,5 +1,5 @@
 <template>
-  <Disclosure as="header" class=" ... backdrop-blur-3xl shadow-gray-500 shadow rounded-3xl mb-10" v-slot="{ open }">
+  <Disclosure as="header" class=" ... backdrop-blur-3xl shadow-gray-500 shadow rounded-3xl mb-2" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8">
       <div class="relative flex h-16 justify-between">
         <div class="relative z-10 flex px-2 lg:px-0">
@@ -26,7 +26,7 @@
         <div class="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center">
 
           <!-- Profile dropdown -->
-          <ToggleSwitch />
+          <toggleSwitch />
           <Menu as="div" class="relative ml-4 flex-shrink-0">
             <div>
               <MenuButton
@@ -94,7 +94,7 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
-import ToggleSwitch from './toggleSwitch.vue';
+import toggleSwitch from '@/components/toggleSwitch.vue';
 import router from '../router';
 
 const user = {

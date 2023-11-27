@@ -9,14 +9,13 @@
                 </a>
             </div>
             <div class="mt-8 md:order-1 md:mt-0">
-                <p class="text-center text-xs leading-5 text-gray-500">&copy; V0.1.6</p>
+                <p class="text-center text-xs leading-5 text-gray-500">&copy; V0.2.0</p>
             </div>
         </div>
     </footer>
 </template>
   
 <script setup>
-// import { defineComponent } from 'vue';
 
 const navigation = [
     {

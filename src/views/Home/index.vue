@@ -1,6 +1,6 @@
 <template class="dark">
   <div class="grid grid-rows-2">
-    <DropdownButton />
+    <DropdownButton class="mb-4" />
     <NameChanger class="mb-10" />
   </div>
 </template>

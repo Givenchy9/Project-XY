@@ -1,83 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-<style>
-    #input{
-        background-color: black;
-        height: 150px;
-        width: 200px;
-        color: white;
-        padding: 10px;
+<button onclick="myFunction1()">100px</button>
+<button onclick="myFunction2()">200px</button>
+<button onclick="myFunction3()">300px</button>
+<button onclick="myFunction4()">400px</button>
+<button onclick="myFunctionR()">Reset</button>
+<input type="number" value="50" id="input" onchange="myFunction()">
+<div id="circle"></div>
+
+<script>
+    function myFunction() {
+        const circle = document.getElementById("circle");
+        const input = document.getElementById("input").value;
+
+        circle.style.height = input + "px";
+        circle.style.width = input + "px";
+        circle.style.borderRadius = input + "px";
     }
-    #circle{
-        margin: auto;
-        background-color: red;
+    function myFunction1() {
+        const circle = document.getElementById("circle");
+        circle.style.height = "100px";
+        circle.style.width = "100px";
+        circle.style.borderRadius = "100px";
+        circle.style.backgroundColor = "blue";
+    }
+    function myFunction2() {
+        const circle = document.getElementById("circle");
+        circle.style.height = "200px";
+        circle.style.width = "200px";
+        circle.style.borderRadius = "200px";
+        circle.style.backgroundColor = "red";
+    }
+    function myFunction3() {
+        const circle = document.getElementById("circle");
+        circle.style.height = "300px";
+        circle.style.width = "300px";
+        circle.style.borderRadius = "300px";
+        circle.style.backgroundColor = "green";
+    }
+    function myFunction4() {
+        const circle = document.getElementById("circle");
+        circle.style.height = "400px";
+        circle.style.width = "400px";
+        circle.style.borderRadius = "400px";
+        circle.style.backgroundColor = "purple";
+    }
+    function myFunctionR() {
+        const circle = document.getElementById("circle");
+        circle.style.height = "50px";
+        circle.style.width = "50px";
+        circle.style.borderRadius = "50px";
+        circle.style.backgroundColor = "black";
+    }
+</script>
+
+<style>
+    #circle {
+        background-color: black;
+        border-radius: 50px;
         height: 50px;
         width: 50px;
-        border-radius: 50px;
-    }
-    #circle:hover{
-        background-color: blue;
-        height: 1000px;
-        width: 1000px;
-        border-radius: 1000px;
-        transition: 2s;
-    }
-    input{
-        border: solid red 2px;
-    }
-    button{
-        margin-top: 10px;
-        background-color: red;
-        border: solid white 2px;
+        transition: 0.5s;
     }
 </style>
-<script>
-    function myFunctionCircle(){
-        // document.getElementById("circle").style.width = "input";
-        // document.getElementById("circle").style.height = "input";
-        // document.getElementById("circle").style.borderRadius = "input";
-        document.getElementById("input1").innerHTML = "circle";
-    }
-    function myFunctionCircle1(){
-        document.getElementById("circle").style.width = "50px";
-        document.getElementById("circle").style.height = "50px";
-        document.getElementById("circle").style.borderRadius = "50px";
-    }
-    function myFunctionCircle2(){
-        document.getElementById("circle").style.width = "100px";
-        document.getElementById("circle").style.height = "100px";
-        document.getElementById("circle").style.borderRadius = "100px";
-    }
-    function myFunctionCircle3(){
-        document.getElementById("circle").style.width = "200px";
-        document.getElementById("circle").style.height = "200px";
-        document.getElementById("circle").style.borderRadius = "200px";
-    }
-    function myFunctionCircleZ(){
-        let Height = 10;
-        let Width = 10;
-        document.getElementById("circle").style.height = height;
-    }
-
-    // document.getElementById("circle").addEventListener("wheel", myFunction);
-    // function myFunction() {
-    // this.style.fontSize = "100px";
-    // }
-</script>
-</head> 
-<body>
-    <div id="input">
-        <label>Height:<input id="input1" type="number" onblur="myFunctionCircle()"></label>
-        <label>Width:<input id="input2" type="number"></label>
-        <label>border-radius:<input type="number"></label>
-        <button onclick="myFunctionCircle1()">50px</button>
-        <button onclick="myFunctionCircle2()">100px</button>
-        <button onclick="myFunctionCircle3()">200px</button>
-        <button onclick="myFunctionCircleZ()">200px</button>
-    </div>
-    <div id="circle"></div>
-</body>
-</html> 

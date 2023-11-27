@@ -1,8 +1,11 @@
 <template>
-  <NavigationBar />
-  <router-view />
-  <Footer />
+  <div class="flex flex-col h-screen">
+    <NavigationBar />
+    <router-view class="flex-grow" />
+    <Footer />
+  </div>
 </template>
+
 <script lang="ts" setup>
 import NavigationBar from '@/components/NavigationBar.vue';
 import Footer from '@/components/Footer.vue';
