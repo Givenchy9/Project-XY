@@ -1,36 +1,25 @@
 <template>
     <div>
-        <textarea id="myInput" readonly class="resize-none h-80 w-80">
-<!-- <?php
-$talen = array("PHP", "C#", "HTML", "JavaScript", "Java", "C++", "C");
-echo "I like " .$talen[3] . ", " . $talen[2] . " and " . $talen[6] . ".<br><br>";
-
-foreach ($talen as $value) {
-echo "$value <br>";
-    }
-?> -->
-    </textarea>
-        <button @click="copyText" class="absolute">
-            <i v-if="isCopied" class="fa-solid fa-check"></i>
-            <i v-else class="fa-regular fa-copy fa-xl"></i>
-        </button>
+        <textarea ref="myTextarea">Hello my name is</textarea>
+        <button @click="copyText"
+            class="rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Copy
+            Text</button>
     </div>
 </template>
   
 <script setup>
-import { ref } from 'vue';
-// const textToCopy = ref();
-const isCopied = ref(false);
+import { ref } from 'vue'
+const myTextarea = ref(null);
 
 const copyText = () => {
-    const copyInput = document.getElementById('myInput');
-    copyInput.select();
-    copyInput.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copyInput.value);
-    isCopied.value = true;
-    setTimeout(() => {
-        isCopied.value = false;
-    }, 1000);
+    myTextarea.value.select();
+    myTextarea.value.setSelectionRange(0, 99999);
+
+    document.execCommand('copy');
+
+    myTextarea.value.setSelectionRange(0, 0);
+
+    alert('Text copied to clipboard!');
 };
 </script>
   

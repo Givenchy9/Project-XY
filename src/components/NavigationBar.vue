@@ -104,7 +104,7 @@ const user = {
 }
 const navigation = [
   { name: 'Jaar 1', href: '/jaar1', current: false },
-  { name: 'Jaar 2', href: '#', current: false },
+  { name: 'Jaar 2', href: '/jaar2', current: false },
   { name: 'Jaar 3', href: '#', current: false },
   { name: 'Extra', href: '#', current: false },
 ]
