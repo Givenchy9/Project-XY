@@ -83,7 +83,7 @@
                                         <p class="py-2 ">
                                             <a target="blanc"
                                                 href="website/Year1/Semester2/FRONTEND/ColorGame/ColorGame.html"
-                                                class="hover:text-orange-400"><i class="fa-solid fa-code pr-2"></i>Color
+                                                class="hover:text-orange-400"><i class="fa-solid fa-lock pr-2"></i>Color
                                                 Game</a>
                                         </p>
                                         <p class="py-2 ">
@@ -152,24 +152,28 @@
                             </p>
                             <div class='dropdown-contentB hidden min-w-40 px-3 py-2 border-t text-left'>
                                 <p class="py-2 ">
-                                    <a href="#" class="hover:text-orange-400"><i
+                                    <a href="website/Year2/Stage1/searchbar2.html" target="blanc"
+                                        class="hover:text-orange-400"><i
                                             class="fa-solid fa-code text-orange-500 pr-2"></i>Searchbar</a>
                                 </p>
                                 <p class="py-2 ">
-                                    <a href="#" class="hover:text-orange-400"><i
-                                            class="fa-solid fa-code text-orange-500 pr-2"></i>Fuzzy search</a>
+                                    <a href="website/Year2/Stage1/searchbar.html" target="blanc"
+                                        class="hover:text-orange-400"><i class="fa-solid fa-lock pr-2"></i>Fuzzy search</a>
                                 </p>
                                 <p class="py-2 ">
-                                    <a href="#" class="hover:text-orange-400"><i
+                                    <a href="website/Year2/Stage1/toggledivs.html" target="blanc"
+                                        class="hover:text-orange-400"><i
                                             class="fa-solid fa-code text-orange-500 pr-2"></i>ToggleDivs</a>
                                 </p>
                                 <p class="py-2 ">
-                                    <a href="#" class="hover:text-orange-400"><i
+                                    <a href="website/Year2/Stage1/copytext.html" target="blanc"
+                                        class="hover:text-orange-400"><i
                                             class="fa-solid fa-code text-orange-500 pr-2"></i>Copy Text</a>
                                 </p>
                                 <p class="py-2 ">
-                                    <a href="#" class="hover:text-orange-400"><i
-                                            class="fa-solid fa-code text-orange-500 pr-2"></i>maximum inputs?</a>
+                                    <a href="website/Year2/Stage1/maximum_inputs.html" target="blanc"
+                                        class="hover:text-orange-400"><i
+                                            class="fa-solid fa-code text-orange-500 pr-2"></i>Maximum Inputs</a>
                                 </p>
                             </div>
                         </div>

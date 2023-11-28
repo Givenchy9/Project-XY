@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Footballers</title>
+</head>
+
+<body>
+
+    <h1>Famous Footballers</h1>
+
+    <input type="text" id="searchInput" placeholder="Search footballers">
+
+    <ul id="footballersList"></ul>
+
+
+
+</body>
+<script>
+    const famousFootballers = [
+        'Lionel Messi',
+        'Cristiano Ronaldo',
+        'Neymar Jr.',
+        'Kylian Mbappé',
+        'Mohamed Salah',
+        'Sergio Ramos',
+        'Robert Lewandowski',
+        'Kevin De Bruyne',
+        'Virgil van Dijk',
+        'Harry Kane',
+        'Luka Modric',
+        'Sadio Mané',
+        'Zlatan Ibrahimović',
+        'Andres Iniesta',
+        'Gareth Bale',
+        'Antoine Griezmann',
+        'Paul Pogba',
+        'Thiago Alcantara',
+        'Eden Hazard',
+        'Karim Benzema',
+        'Fernandinho',
+        'Bruno Fernandes',
+        'Erling Haaland',
+        'Jadon Sancho',
+        'Raheem Sterling',
+        'Phil Foden',
+        'Mason Mount',
+        'Ciro Immobile',
+        'Joshua Kimmich',
+        'Thomas Müller',
+        'Manuel Neuer',
+        'Kai Havertz',
+        'Toni Kroos',
+        'Leroy Sané',
+        'Romelu Lukaku',
+        'Erling Haaland',
+        'Son Heung-min',
+        'Hakim Ziyech',
+        'Mohamed Elneny',
+        'Trent Alexander-Arnold',
+        'Andrew Robertson',
+        'Virgil van Dijk',
+        'Alisson Becker',
+        'Jordan Henderson',
+        'Georginio Wijnaldum',
+        'Robert Firmino',
+        'Thiago Alcantara',
+        'NGolo Kanté',
+        'Edouard Mendy',
+        'Kai Havertz',
+        'Mason Mount',
+        'César Azpilicueta',
+        'Christian Pulisic',
+        'Hakim Ziyech',
+        'Timo Werner',
+        'Jorginho'
+    ];
+
+    const footballersList = document.getElementById('footballersList');
+    const searchInput = document.getElementById('searchInput');
+
+    populateList(famousFootballers);
+
+    searchInput.addEventListener('input', handleSearch);
+
+    function populateList(footballers) {
+        footballersList.innerHTML = '';
+
+        footballers.forEach(footballer => {
+            const listItem = document.createElement('li');
+            listItem.textContent = footballer;
+            footballersList.appendChild(listItem);
+        });
+    }
+
+    function handleSearch() {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        const filteredFootballers = famousFootballers.filter(footballer =>
+            footballer.toLowerCase().includes(searchTerm)
+        );
+
+        populateList(filteredFootballers);
+    }
+</script>
+
+</html>

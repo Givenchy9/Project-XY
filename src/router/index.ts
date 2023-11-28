@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeZ1 from '@/views/Home/HomeZ1.vue'
 import jaar1 from '@/views/Home/jaar1.vue'
+import jaar2 from '@/views/Home/jaar2.vue'
 import index from '@/views/Home/index.vue'
 import test from '@/views/Home/test.vue'
 import NameChanger from '@/views/Home/NameChanger.vue'
@@ -25,6 +26,14 @@ const router = createRouter({
           component: jaar1,
           meta: {
             title: 'jaar1'
+          }
+        },
+        {
+          path: '/jaar2',
+          name: 'jaar2',
+          component: jaar2,
+          meta: {
+            title: 'jaar2'
           }
         },
         {

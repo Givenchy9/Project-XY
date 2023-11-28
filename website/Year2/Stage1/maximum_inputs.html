@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Validation</title>
+    <style>
+        #myInput {
+            padding: 5px;
+        }
+
+        .error {
+            background-color: #ff9999;
+        }
+
+        .success {
+            background-color: #99ff99;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="myInput">
+
+    <script>
+        const myInput = document.getElementById('myInput');
+
+        myInput.addEventListener('input', function () {
+            if (myInput.value.length > 20) {
+                myInput.classList.remove('success');
+                myInput.classList.add('error');
+            } else {
+                myInput.classList.remove('error');
+                myInput.classList.add('success');
+            }
+        });
+    </script>
+</body>
+
+</html>
