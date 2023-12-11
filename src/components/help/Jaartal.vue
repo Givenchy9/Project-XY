@@ -1,10 +1,10 @@
 <template>
     <div class="mt-4">
         <label for="naam">Naam:</label>
-        <input type="text" id="naam" v-model="naam" maxlength="20">
+        <input type="text" id="naam" v-model="naam" maxlength="20" class="relative">
 
         <label for="leeftijd">Leeftijd:</label>
-        <input type="number" id="leeftijd" v-model="leeftijd" maxlength="20">
+        <input type="number" id="leeftijd" v-model="leeftijd" maxlength="20" class="relative ">
 
         <p id="output1"></p>
         <p id="output2"></p>
@@ -12,7 +12,7 @@
         <p id="output4"></p>
 
         <button @click="myFunction"
-            class="bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            class="relative bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             Button
         </button>
     </div>

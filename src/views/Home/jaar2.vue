@@ -1,6 +1,7 @@
 <template>
     <div class="overflow-auto h-screen">
-        <div class="grid grid-col m-auto mb-5 p-2 w-2/3 backdrop-blur-3xl rounded-3xl border-white border-2">
+        <div @mousemove="hover"
+            class="button grid grid-col m-auto mb-5 p-2 w-2/3 backdrop-blur-3xl rounded-3xl border-white border-2">
             <p class="text-center border-b-2 font-bold">Searchbar
                 <ShortToggleSwitch @click="toggleDivA" class="float-right" />
             </p>
@@ -11,7 +12,7 @@
                 <div class="p-2">
                     <p>Javascript</p>
                     <textarea id="CopyA1" readonly
-                        class="resize-none h-40 w-full overflow rounded-lg px-2 text-xs outline-none">
+                        class="relative resize-none h-40 w-full overflow rounded-lg px-2 text-xs outline-none">
 <!-- 
 <script>
     const famousFootballers = [
@@ -49,7 +50,8 @@
 </script>
  -->
     </textarea>
-                    <button @click="CopyA1">
+                    <button @click="CopyA1"
+                        class="relative rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                         copy this code
                         <i v-if="isCopiedA1" class="fa-solid fa-check text-green-500"></i>
                         <i v-else class="fa-regular fa-copy fa-xl"></i>
@@ -71,7 +73,8 @@
 
 
 
-        <div class="grid grid-col m-auto mb-5 p-2 w-2/3 backdrop-blur-3xl rounded-3xl border-white border-2">
+        <div @mousemove="hover"
+            class="button grid grid-col m-auto mb-5 p-2 w-2/3 backdrop-blur-3xl rounded-3xl border-white border-2">
             <p class="text-center border-b-2 font-bold">Fuzzy Search
                 <ShortToggleSwitch disabled @click="toggleDivB" class="float-right opacity-50" />
             </p>
@@ -82,10 +85,11 @@
                 <div class="p-2">
                     <p>Javascript</p>
                     <textarea id="CopyB1" readonly
-                        class="resize-none h-40 w-full overflow rounded-lg px-2 text-xs outline-none">
+                        class="relative resize-none h-40 w-full overflow rounded-lg px-2 text-xs outline-none">
 
     </textarea>
-                    <button @click="CopyB1">
+                    <button @click="CopyB1"
+                        class="relative rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                         copy this code
                         <i v-if="isCopiedB1" class="fa-solid fa-check text-green-500"></i>
                         <i v-else class="fa-regular fa-copy fa-xl"></i>
@@ -96,7 +100,8 @@
                     <textarea id="CopyB2" readonly class="resize-none h-40 w-full rounded-lg px-2 text-xs outline-none">
 
     </textarea>
-                    <button @click="CopyB2">
+                    <button @click="CopyB2"
+                        class="relative rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                         copy this code
                         <i v-if="isCopiedB2" class="fa-solid fa-check text-green-500"></i>
                         <i v-else class="fa-regular fa-copy fa-xl"></i>
@@ -107,7 +112,8 @@
 
 
 
-        <div class="grid grid-col m-auto mb-5 p-2 w-2/3 backdrop-blur-3xl rounded-3xl border-white border-2">
+        <div @mousemove="hover"
+            class="button grid grid-col m-auto mb-5 p-2 w-2/3 backdrop-blur-3xl rounded-3xl border-white border-2">
             <p class="text-center border-b-2 font-bold">Toggle Divs
                 <ShortToggleSwitch @click="toggleDivC" class="float-right" />
             </p>
@@ -118,7 +124,7 @@
                 <div class="p-2">
                     <p>Javascript</p>
                     <textarea id="CopyC1" readonly
-                        class="resize-none h-40 w-full overflow rounded-lg px-2 text-xs outline-none">
+                        class="relative resize-none h-40 w-full overflow rounded-lg px-2 text-xs outline-none">
 <!-- 
 <script>
     function myFunction() {
@@ -137,7 +143,8 @@
 </script>
  -->
     </textarea>
-                    <button @click="CopyC1">
+                    <button @click="CopyC1"
+                        class="relative rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                         copy this code
                         <i v-if="isCopiedC1" class="fa-solid fa-check text-green-500"></i>
                         <i v-else class="fa-regular fa-copy fa-xl"></i>
@@ -145,7 +152,8 @@
                 </div>
                 <div class="p-2">
                     <p>Css</p>
-                    <textarea id="CopyC2" readonly class="resize-none h-40 w-full rounded-lg px-2 text-xs outline-none">
+                    <textarea id="CopyC2" readonly
+                        class="relative resize-none h-40 w-full rounded-lg px-2 text-xs outline-none">
 <!-- 
 <style>
         #div1 {
@@ -171,7 +179,8 @@
     </style>
  -->
     </textarea>
-                    <button @click="CopyC2">
+                    <button @click="CopyC2"
+                        class="relative rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                         copy this code
                         <i v-if="isCopiedC2" class="fa-solid fa-check text-green-500"></i>
                         <i v-else class="fa-regular fa-copy fa-xl"></i>
@@ -182,7 +191,8 @@
 
 
 
-        <div class="grid grid-col m-auto mb-5 p-2 w-2/3 backdrop-blur-3xl rounded-3xl border-white border-2">
+        <div @mousemove="hover"
+            class="button grid grid-col m-auto mb-5 p-2 w-2/3 backdrop-blur-3xl rounded-3xl border-white border-2">
             <p class="text-center border-b-2 font-bold">Copy Text
                 <ShortToggleSwitch @click="toggleDivD" class="float-right" />
             </p>
@@ -193,7 +203,7 @@
                 <div class="p-2">
                     <p>Javascript</p>
                     <textarea id="CopyD1" readonly
-                        class="resize-none h-40 w-full overflow rounded-lg px-2 text-xs outline-none">
+                        class="relative resize-none h-40 w-full overflow rounded-lg px-2 text-xs outline-none">
 <!-- 
 <script>
         function copyText() {
@@ -211,7 +221,8 @@
     </script>
  -->
     </textarea>
-                    <button @click="CopyD1">
+                    <button @click="CopyD1"
+                        class="relative rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                         copy this code
                         <i v-if="isCopiedD1" class="fa-solid fa-check text-green-500"></i>
                         <i v-else class="fa-regular fa-copy fa-xl"></i>
@@ -228,7 +239,8 @@
 
 
 
-        <div class="grid grid-col m-auto mb-5 p-2 w-2/3 backdrop-blur-3xl rounded-3xl border-white border-2">
+        <div @mousemove="hover"
+            class="button grid grid-col m-auto mb-5 p-2 w-2/3 backdrop-blur-3xl rounded-3xl border-white border-2">
             <p class="text-center border-b-2 font-bold">Maximum Input
                 <ShortToggleSwitch @click="toggleDivE" class="float-right" />
             </p>
@@ -239,7 +251,7 @@
                 <div class="p-2">
                     <p>Javascript</p>
                     <textarea id="CopyE1" readonly
-                        class="resize-none h-40 w-full overflow rounded-lg px-2 text-xs outline-none">
+                        class="relative resize-none h-40 w-full overflow rounded-lg px-2 text-xs outline-none">
 <!-- 
 <script>
         const myInput = document.getElementById('myInput');
@@ -256,7 +268,8 @@
     </script>
  -->
     </textarea>
-                    <button @click="CopyE1">
+                    <button @click="CopyE1"
+                        class="relative rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                         copy this code
                         <i v-if="isCopiedE1" class="fa-solid fa-check text-green-500"></i>
                         <i v-else class="fa-regular fa-copy fa-xl"></i>
@@ -282,6 +295,17 @@ import CopyText from '@/components/help/CopyText.vue'
 import maximum_inputs from '@/components/help/maximum_inputs.vue'
 import mail_username from '@/components/help/mail_username.vue'
 import stopwatch from '@/components/help/stopwatch.vue'
+
+
+
+const hover = (e) => {
+    const buttonRect = e.target.getBoundingClientRect();
+    const x = e.pageX - buttonRect.left;
+    const y = e.pageY - buttonRect.top;
+
+    e.target.style.setProperty('--x', `${x}px`);
+    e.target.style.setProperty('--y', `${y}px`);
+};
 
 const DivA = ref(true);
 
@@ -487,3 +511,35 @@ const CopyF2 = () => {
 };
 
 </script>
+<style lang="scss" scoped>
+.button {
+    overflow: hidden;
+    cursor: cell;
+
+    // span {
+    //     position: relative;
+    //     pointer-events: none;
+    //     z-index: 8;
+    // }
+
+    &::before {
+        --size: 0;
+
+        content: '';
+        position: absolute;
+        left: var(--x);
+        top: var(--y);
+        width: var(--size);
+        height: var(--size);
+        background: radial-gradient(circle closest-side, blue, transparent);
+        transform: translate(-50%, -50%);
+        transition: width 0.2s ease, height 0.2s ease;
+        z-index: 0;
+        opacity: 60%;
+    }
+
+    &:hover::before {
+        --size: 200px;
+    }
+}
+</style>

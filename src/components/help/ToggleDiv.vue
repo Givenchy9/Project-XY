@@ -2,7 +2,7 @@
     <div>
         <div :style="{ display: isDiv1Visible ? 'inline-block' : 'none' }" id="div1">hallo</div>
         <div :style="{ display: !isDiv1Visible ? 'inline-block' : 'none' }" id="div2">hallo</div>
-        <input type="checkbox" @click="toggleDivs">
+        <input type="checkbox" @click="relative toggleDivs">
     </div>
 </template>
   

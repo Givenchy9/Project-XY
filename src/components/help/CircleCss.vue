@@ -1,16 +1,16 @@
 <template>
     <div>
         <button @click="myFunction1"
-            class="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">100px</button>
+            class="relative rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">100px</button>
         <button @click="myFunction2"
-            class="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">200px</button>
+            class="relative rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">200px</button>
         <button @click="myFunction3"
-            class="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">300px</button>
+            class="relative rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">300px</button>
         <button @click="myFunction4"
-            class="rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">400px</button>
+            class="relative rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">400px</button>
         <button @click="myFunctionR"
-            class="rounded-full bg-black px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-500">Reset</button>
-        <input type="number" class="rounded-xl" v-model="inputValue" @change="myFunction" maxlength="20" />
+            class="relative rounded-full bg-black px-3.5 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-500">Reset</button>
+        <input type="number" class="relative rounded-xl" v-model="inputValue" @change="myFunction" maxlength="20" />
         <div id="circle" :style="circleStyle"></div>
     </div>
 </template>
