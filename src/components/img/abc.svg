@@ -1,0 +1,16 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 56"
+        class="absolute inset-x-0 inset-y-[-30%] h-[160%] w-full skew-y-[-18deg] fill-black/[0.02] stroke-black/5 dark:fill-white/1 dark:stroke-white/2.5">
+        {/* Define the grid pattern */}
+        <defs>
+            <pattern id="gridPattern" width="8" height="8" patternUnits="userSpaceOnUse">
+                <rect width="8" height="8" fill="url(#smallGrid)" />
+                <path d="M 8 0 L 0 0 0 8" fill="none" stroke="black" strokeWidth="0.5" />
+            </pattern>
+        </defs>
+
+        {/* Apply the grid pattern to a rectangle covering the entire SVG */}
+        <rect width="100%" height="100%" fill="url(#gridPattern)" />
+
+        {/* Add your additional SVG content here */}
+        {/* For examplr other SVG elements to create the pattern */}
+    </svg>

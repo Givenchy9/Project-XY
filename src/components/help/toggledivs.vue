@@ -3,7 +3,7 @@
         <div id="div1" class="h-20 w-20 bg-blue-500 absolute text-red-500">hallo</div>
         <div id="div2" class="h-20 w-20 bg-red-500 absolute hidden text-blue-500">hallo</div>
 
-        <input id="div3" type="checkbox" class="mt-96" v-model="isChecked" />
+        <input id="div3" type="checkbox" class="relative mt-96" v-model="isChecked" />
     </div>
 </template>
 

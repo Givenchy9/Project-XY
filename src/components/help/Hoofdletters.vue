@@ -2,47 +2,47 @@
     <div>
         <div>
             <input v-model="input1" type="text" max="20" placeholder="Alles Hoofdletter" maxlength="20"
-                class="rounded border-blue-500 border-2 outline-none" />
+                class="relative rounded border-blue-500 border-2 outline-none" />
             <button @click="myFunction1"
-                class="rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text1</button>
+                class="relative rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text1</button>
             <p>{{ output1 }}</p>
         </div>
         <div>
             <input v-model="input2" type="text" max="20" placeholder="Alles Kleineletter" maxlength="20"
-                class="rounded border-red-500 border-2 outline-none" />
+                class="relative rounded border-red-500 border-2 outline-none" />
             <button @click="myFunction2"
-                class="rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text2</button>
+                class="relative rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text2</button>
             <p>{{ output2 }}</p>
         </div>
         <div>
             <input v-model="input3" type="text" max="20" placeholder="1e letter Hoofdletter" maxlength="20"
-                class="rounded border-green-500 border-2 outline-none" />
+                class="relative rounded border-green-500 border-2 outline-none" />
             <button @click="myFunction3"
-                class="rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text3</button>
+                class="relative rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text3</button>
             <p>{{ output3 }}</p>
         </div>
         <div>
             <input v-model="input4" type="text" max="20" placeholder="Elke eerste letter" maxlength="20"
-                class="rounded border-yellow-500 border-2 outline-none" />
+                class="relative rounded border-yellow-500 border-2 outline-none" />
             <button @click="myFunction4"
-                class="rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text4</button>
+                class="relative rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text4</button>
             <p>{{ output4 }}</p>
         </div>
         <div>
             <input v-model="input5" type="text" max="20" placeholder="Standaard Input" maxlength="20"
-                class="rounded border-pink-500 border-2 outline-none" />
+                class="relative rounded border-pink-500 border-2 outline-none" />
             <button @click="myFunction5"
-                class="rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text5</button>
+                class="relative rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text5</button>
             <p>{{ output5 }}</p>
         </div>
         <div>
             <input v-model="input6" type="text" max="20" placeholder="Alles Hoofdletter" maxlength="20"
-                class="rounded border-black border-2 outline-none" />
+                class="relative rounded border-black border-2 outline-none" />
 
             <button @click="myFunction6"
-                class="rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text6</button>
+                class="relative rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Text6</button>
             <select v-model="selectedOption"
-                class="rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 outline-none"
+                class="relative rounded-md bg-white px-3 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 outline-none"
                 name="select">
                 <option value="myFunction1">Text1</option>
                 <option value="myFunction2">Text2</option>
@@ -53,7 +53,7 @@
             <p>{{ output6 }}</p>
         </div>
         <button @click="myFunction"
-            class="rounded-full w-60 bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">All</button>
+            class="relative rounded-full w-60 bg-white px-3.5 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">All</button>
     </div>
 </template>
 <script setup>
