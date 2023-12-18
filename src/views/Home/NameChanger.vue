@@ -1,7 +1,7 @@
 <template>
     <div class="m-auto h-full grid grid-rows-12 gap-4 w-1/2 backdrop-blur-3xl p-2 my-10 rounded-xl border-white border-2">
         <div class="row-span-2 text-center font-bold text-xl">
-            <p>
+            <p class="dark:text-white">
                 Come up with a nice title for this website</p>
         </div>
         <div class="row-span-2">

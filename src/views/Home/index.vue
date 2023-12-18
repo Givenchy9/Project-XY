@@ -5,20 +5,7 @@
   </div>
 </template>
   
-<script>
-import { useDark, useToggle } from "@vueuse/core"
+<script setup>
 import DropdownButton from '@/components/DropdownButton.vue';
 import NameChanger from '@/components/NameChanger.vue';
-
-const isDark = useDark();
-const toggleDark = useToggle(isDark)
-
-console.log(isDark.value);
-
-export default {
-  components: {
-    DropdownButton,
-    NameChanger
-  }
-}
 </script>

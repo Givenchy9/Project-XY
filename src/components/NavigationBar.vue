@@ -4,13 +4,15 @@
       <div class="relative flex h-16 justify-between">
         <div class="relative z-10 flex px-2 lg:px-0">
           <div class="flex flex-shrink-0 items-center">
-            <i class="fa-solid fa-shop fa-xl"></i>
+            <i
+              class="fa-solid fa-shop fa-xl hover:text-gray-400 dark:text-white dark:hover:text-gray-400 dark:text-white"></i>
           </div>
         </div>
         <div class="relative z-0 flex flex-1 items-center justify-center px-2 sm:absolute sm:inset-0">
           <div class="w-full sm:max-w-xs">
-            <h1 class="text-center font-bold text-2xl"><router-link to="/" class="hover:text-white">Givenchy{{ title
-            }}</router-link></h1>
+            <h1 class="text-center font-bold text-2xl"><router-link to="/"
+                class="hover:text-gray-400 dark:text-white dark:hover:text-gray-400">Givenchy{{ title
+                }}</router-link></h1>
           </div>
         </div>
         <div class="relative z-10 flex items-center lg:hidden">
@@ -26,14 +28,14 @@
         <div class="hidden lg:relative lg:z-10 lg:ml-4 lg:flex lg:items-center">
 
           <!-- Profile dropdown -->
-          <toggleSwitch />
+          <LightDark />
           <Menu as="div" class="relative ml-4 flex-shrink-0">
             <div>
               <MenuButton
                 class="relative flex rounded-full bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                 <span class="absolute -inset-1.5" />
                 <span class="sr-only">Open user menu</span>
-                <img class="h-8 w-8 rounded-full" src="@/components/img/github.svg" alt="" />
+                <img class="h-8 w-8 rounded-full dark:border-2" src="@/components/img/github.svg" alt="" />
               </MenuButton>
             </div>
             <transition enter-active-class="transition ease-out duration-100"
@@ -54,7 +56,8 @@
       <nav class="hidden lg:flex lg:space-x-8 lg:py-2 grid grid-cols-4" aria-label="Global">
         <a v-for="item in navigation" :key="item.name" :href="item.href"
           :class="[item.current ? 'bg-gray-100 text-gray-900' : 'text-gray-900 hover:bg-gray-50 hover:text-gray-900', 'inline-flex items-center rounded-md py-2 px-3 text-sm font-medium']"
-          :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+          :aria-current="item.current ? 'page' : undefined" class="dark:text-white dark:hover:text-gray-500">{{ item.name
+          }}</a>
       </nav>
     </div>
 
@@ -73,18 +76,13 @@
             <div class="text-base font-medium text-gray-800">{{ user.name }}</div>
             <div class="text-sm font-medium text-gray-500">{{ user.email }}</div>
           </div>
-          <button type="button"
-            class="relative ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-            <span class="absolute -inset-1.5" />
-            <span class="sr-only">View notifications</span>
-          </button>
+          <LightDark class="ml-96" />
         </div>
         <div class="mt-3 space-y-1 px-2">
           <DisclosureButton v-for="item in userNavigation" :key="item.name" as="a" :href="item.href"
             class="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900">{{
               item.name }}</DisclosureButton>
         </div>
-        <ToggleSwitch class="ml-5 mt-10" />
       </div>
     </DisclosurePanel>
   </Disclosure>
@@ -96,6 +94,7 @@ import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 import toggleSwitch from '@/components/toggleSwitch.vue';
 import router from '../router';
+import LightDark from './LightDark.vue';
 
 const user = {
   name: 'Givenchy',
