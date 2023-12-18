@@ -1,17 +1,17 @@
 <template>
     <div>
-        <div class="grid grid-rows-3 w-96 m-auto rounded-2xl border-2 backdrop-blur-3xl">
+        <div class="backdrop-blur-3xl grid grid-rows-3 w-96 m-auto rounded-2xl ">
             <!-- Title -->
-            <p class="text-2xl text-center font-bold">Links</p>
+            <p class="text-2xl text-center font-bold dark:text-white">Links</p>
             <!-- Dropdown -->
             <div class="flex justify-center items-center mb-10 z-100 relative">
                 <!--Jaar1-->
                 <div class="dropdown relative inline-block">
                     <button type="button"
-                        class="relative inline-block inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">Jaar1</button>
+                        class="relative inline-block inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 mx-0.5 hover:bg-gray-50 focus:z-10 dark:bg-black dark:text-white">Jaar1</button>
                     <!--Jaar1/Semester-->
                     <div
-                        class="dropdown-content hidden absolute min-w-40 shadow-2xl px-3 z-10 text-center overflow-auto h-80 w-56 bg-white">
+                        class="dropdown-content hidden absolute min-w-40 shadow-2xl px-3 z-10 text-center overflow-auto h-80 w-56 bg-white dark:bg-black dark:text-white">
                         <!--Jaar1/Semester/1-->
                         <div class="dropdownA relative inline-block border-y-2 w-full">
                             <p class="py-2 font-bold">
@@ -43,27 +43,27 @@
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Array</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-t">
                                             <a target="blanc" href="website/Year1/Semester2/Basis/Circle.html"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Circle</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-t">
                                             <a target="blanc" href="website/Year1/Semester2/Basis/Hoofdletters.php"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Hoofdletters</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-t">
                                             <a target="blanc" href="website/Year1/Semester2/Basis/leeftijd.html"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Leeftijd</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-t">
                                             <a target="blanc" href="website/Year1/Semester2/Basis/leeftijdgrenzen.html"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Input to Output</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-y">
                                             <a target="blanc" href="website/Year1/Semester2/Basis/Mail-Username.html"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Mail to Username</a>
@@ -71,7 +71,7 @@
                                     </div>
                                 </div><br>
                                 <!--Jaar1/Semester/2/Frontend-->
-                                <div class="dropdownA2 relative inline-block w-40 py-2 border w-full">
+                                <div class="dropdownA2 relative inline-block w-40 py-2 w-full">
                                     <a class="font-bold text-gray-500">Frontend</a>
                                     <div class='dropdown-contentA2 hidden min-w-40 px-3 py-2 text-left'>
                                         <p class="py-2 ">
@@ -80,32 +80,32 @@
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Afbeeldingen</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-t">
                                             <a target="blanc"
                                                 href="website/Year1/Semester2/FRONTEND/ColorGame/ColorGame.html"
                                                 class="hover:text-orange-400"><i class="fa-solid fa-lock pr-2"></i>Color
                                                 Game</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-t">
                                             <a target="blanc"
                                                 href="website/Year1/Semester2/FRONTEND/eerstewebsite/eerstewebsite1.html"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Eerste Website</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-t">
                                             <a target="blanc"
                                                 href="website/Year1/Semester2/FRONTEND/Stopwatch/Stopwatch.html"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Stopwatch (zie ook
                                                 casino.html)</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-t">
                                             <a target="blanc"
                                                 href="website/Year1/Semester2/FRONTEND/Tabellen/TabellenRace.html"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Tabellen</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-y">
                                             <a target="blanc" href="website/Year1/Semester2/FRONTEND/Tafels/Tafels.html"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code text-orange-500 pr-2"></i>Tafels</a>
@@ -116,11 +116,11 @@
                                 <div class="dropdownA2 relative inline-block min-w-40 py-2 border-b w-full">
                                     <a class="font-bold text-gray-500">Games</a>
                                     <div class='dropdown-contentA2 hidden min-w-40 px-3 py-2'>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-t">
                                             <a target="blanc" href="website/Year1/Semester2/FRONTEND/Games/Game1.html"
                                                 class="hover:text-orange-400"><i class="fa-solid fa-code pr-2"></i>Blok</a>
                                         </p>
-                                        <p class="py-2 ">
+                                        <p class="py-2 border-y">
                                             <a target="blanc" href="website/Year1/Semester2/FRONTEND/Games/interval.html"
                                                 class="hover:text-orange-400"><i
                                                     class="fa-solid fa-code pr-2"></i>Intervall</a>
@@ -140,10 +140,10 @@
                 <!--Jaar2-->
                 <div class="dropdown relative inline-block">
                     <button type="button"
-                        class="relative inline-block -ml-px inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">Jaar2</button>
+                        class="relative inline-block -ml-px inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 mx-0.5 hover:bg-gray-50 focus:z-10 dark:bg-black dark:text-white">Jaar2</button>
                     <!--Jaar2/Stage-->
                     <div
-                        class="dropdown-content hidden absolute min-w-40 shadow-2xl px-3 z-10 text-center overflow-auto h-80 w-56 bg-white">
+                        class="dropdown-content hidden absolute min-w-40 shadow-2xl px-3 z-10 text-center overflow-auto h-80 w-56 bg-white dark:bg-black dark:text-white">
                         <div class="dropdownB relative inline-block border-y-2 w-full">
                             <p class="py-2 font-bold">
                                 <i class="folder-jaar2-b1 pr-2 text-blue-400 fa-solid fa-folder"></i>
@@ -200,17 +200,17 @@
                 </div>
                 <!-- <div class="dropdown relative inline-block"> -->
                 <button type="button"
-                    class="opacity-50 relative inline-block -ml-px inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">Jaar3</button>
+                    class="opacity-50 relative inline-block -ml-px inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 mx-0.5 hover:bg-gray-50 focus:z-10 dark:bg-black dark:text-white">Jaar3</button>
                 <!-- <div class="dropdown-content none absolute min-w-40 shadow-2xl px-3 py-4 z-10 rounded-2xl rounded-tl text-center">
                 <p>Jaar 3</p>
                 </div>
                 </div> -->
                 <div class="dropdown relative inline-block">
                     <button type="button"
-                        class=" relative inline-block -ml-px inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">Extra</button>
+                        class="relative inline-block -ml-px inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 mx-0.5 hover:bg-gray-50 focus:z-10 dark:bg-black dark:text-white">Extra</button>
                     <!--Extra/-->
                     <div
-                        class="dropdown-content hidden absolute min-w-40 shadow-2xl px-3 z-10 text-center overflow-auto h-80 w-56 bg-white">
+                        class="dropdown-content hidden absolute min-w-40 shadow-2xl px-3 z-10 text-center overflow-auto h-80 w-56 bg-white dark:bg-black dark:text-white">
                         <!--Extra/Dropdown-->
                         <div class="dropdownA relative inline-block border-t-2 w-full">
                             <p class="py-2 font-bold">
@@ -284,7 +284,7 @@
                 </div>
             </div>
             <!-- Sub Title -->
-            <p class="text-xl text-center text-gray-600">see all my projects in a seperate page</p>
+            <p class="text-xl text-center text-gray-600 dark:text-gray-800">see all my projects in a seperate page</p>
         </div>
     </div>
 </template>
